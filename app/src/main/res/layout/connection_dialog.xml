@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_margin="6dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/connectionDialog">
+
+        <TextView
+            android:id="@+id/connectivityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/font"/>
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_border"
+            android:maxLines="1"
+            style="@style/font"
+            android:textSize="16dp"
+            android:textColorHint="#dddddd"
+            android:hint="ip or hostname"/>
+
+        <ProgressBar
+            android:id="@+id/connectionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/connectButton"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:layout_gravity="center"
+            android:textColor="#dddddd"
+            android:background="@drawable/button_border"
+            style="@style/font"/>
+</LinearLayout>

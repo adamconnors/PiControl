@@ -1,0 +1,132 @@
+[
+  {
+    "type": "forward",
+    "message0": "forward %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "power",
+        "align": "CENTRE",
+        "options": [["50%", "50"], ["75%", "75"], ["100%", "100"]]
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 200
+  },
+
+  {
+    "type": "backward",
+    "message0": "backward %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "power",
+        "align": "CENTRE",
+        "options": [["50%", "50"], ["75%", "75"], ["100%", "100"]]
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 200
+  },
+  {
+    "type": "stop",
+    "message0": "All STOP !",
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 200
+  },
+
+  {
+    "type": "turn left",
+    "message0": "turn left",
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 200
+  },
+
+  {
+    "type": "turn right",
+    "message0": "turn right",
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 200
+  },
+
+  {
+    "type": "camera",
+    "message0": "camera position %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "position",
+        "align": "CENTRE",
+        "options": [["centre", "centre"], ["up", "up"], ["down", "down"], ["left", "left"], ["right", "right"]]
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 100
+  },
+
+  {
+    "type": "wait",
+    "message0": "wait for %1 milliseconds",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "millis",
+        "align": "CENTRE"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 150
+  },
+  {
+    "type": "print",
+    "message0": "print %1",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "string",
+        "align": "CENTRE"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 150
+  },
+  {
+    "type": "random",
+    "message0": "random from %1 to %2",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "from"
+      },
+      {
+        "type": "input_value",
+        "name": "to"
+      }
+    ],
+    "nextStatement": null,
+    "output": null,
+    "inputsInline": true,
+    "tooltip": "",
+    "helpUrl": "http://www.example.com/",
+    "colour": 230
+  },
+  {
+    "type": "execute",
+    "message0": "execute !",
+    "previousStatement": null,
+    "colour": 300
+  }
+]

@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BlocklyVerticalTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="font">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+
+    <style name="BlocklyVerticalTheme" parent="BlocklyTheme">
+        <item name="blockTextSize">14sp</item>
+        <item name="blockHat">false</item>
+    </style>
+
+    <style name="BlocklyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="minScale">0.5</item>
+        <item name="maxScale">2.5</item>
+        <item name="defaultScale">1.0</item>
+    </style>
+
+    <style name="DefaultCategoryLabelStyle">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="CategoryLabelStyle" parent="DefaultCategoryLabelStyle">
+    </style>
+
+</resources>

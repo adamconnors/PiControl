@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffff0000"
+    android:id="@+id/root"
+    tools:context="com.cromulator.picontrol.MainActivity">
+
+    <!-- Web view for camera stream -->
+    <WebView android:id="@+id/webview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <include layout="@layout/connection_dialog"/>
+    </FrameLayout>
+
+    <include layout="@layout/script_layout"/>
+
+    <ImageView
+        android:id="@+id/closeHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cameraCtrl"
+        android:src="@drawable/button_closed_selector"
+        android:layout_margin="6dp"/>
+
+    <ImageView
+        android:id="@+id/openHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cameraCtrl"
+        android:layout_toRightOf="@+id/closeHand"
+        android:src="@drawable/button_open_selector"
+        android:layout_margin="6dp"/>
+
+
+    <com.andretietz.android.controller.DirectionView
+        android:id="@+id/cameraCtrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:deadZone="0"
+        android:layout_margin="4dp"/>
+
+    <com.andretietz.android.controller.DirectionView
+        android:id="@+id/motorCtrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:deadZone="0"
+        android:layout_margin="4dp"/>
+
+    <!-- Debug Log -->
+    <TextView android:id="@+id/debuglog"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="top|right"
+        android:gravity="right"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorGreen"
+        android:textSize="12dp"
+        android:paddingRight="4dp"
+        android:text="Just a test"
+        android:layout_alignBottom="@+id/cameraCtrl"
+        android:layout_toStartOf="@+id/motorCtrl"
+        android:layout_marginBottom="52dp" />
+
+</RelativeLayout>

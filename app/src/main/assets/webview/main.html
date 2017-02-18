@@ -1,0 +1,26 @@
+<html>
+
+  <script type="text/javascript">
+    function setStreamLocation(url) {
+      document.getElementById("stream").src = url;
+    }
+
+    function init() {
+      // Called on first load of webview, do any initialisation here.
+    }
+
+    function mathRandomInt(a, b) {
+       if (a > b) {
+         // Swap a and b to ensure a is smaller.
+         var c = a;
+         a = b;
+         b = c;
+       }
+       return Math.floor(Math.random() * (b - a + 1) + a);
+     }
+  </script>
+
+  <body style="border:0px; margin:0px" style="background-color:#000000">
+    <img id="stream" style="width: 100%; height: 100%; background-color:#222222" src="tvstatic.gif"/>
+  </body>
+</html>
