@@ -1,4 +1,4 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 /**
  * Converts joystick x, y inputs into raw values to be sent to the robot.

@@ -1,4 +1,4 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.app.Application;
 import android.os.Handler;

@@ -1,6 +1,5 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;

@@ -1,8 +1,5 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;

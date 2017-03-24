@@ -1,11 +1,8 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.util.Log;
-
-import java.util.InvalidPropertiesFormatException;
 
 /**
  * A place for all the shared settings associated with this application.

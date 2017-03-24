@@ -56,7 +56,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         app:deadZone="0"
-        android:layout_margin="4dp"/>
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp" />
 
     <!-- Debug Log -->
     <TextView android:id="@+id/debuglog"
@@ -68,9 +70,7 @@
         android:textColor="@color/colorGreen"
         android:textSize="12dp"
         android:paddingRight="4dp"
-        android:text="Just a test"
-        android:layout_alignBottom="@+id/cameraCtrl"
-        android:layout_toStartOf="@+id/motorCtrl"
-        android:layout_marginBottom="52dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

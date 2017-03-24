@@ -1,6 +1,5 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 

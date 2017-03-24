@@ -1,16 +1,13 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;

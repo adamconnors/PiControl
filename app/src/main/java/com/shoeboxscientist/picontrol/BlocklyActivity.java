@@ -1,15 +1,13 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.google.blockly.android.AbstractBlocklyActivity;
 import com.google.blockly.android.codegen.CodeGenerationRequest;
-import com.google.blockly.model.Block;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -16,7 +16,6 @@ import android.os.Message;
 import android.util.Log;
 
 import java.util.List;
-import java.util.Set;
 
 /**
  * Handles checking for & finding WiFi hotspot

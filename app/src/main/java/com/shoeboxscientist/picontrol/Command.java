@@ -1,4 +1,4 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 /**
  * Value class and builder for sending messages to the robot. RestClient uses this class

@@ -1,8 +1,7 @@
-package com.cromulator.picontrol;
+package com.shoeboxscientist.picontrol;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Message;
 import android.util.Log;
 
 import java.util.ArrayList;
