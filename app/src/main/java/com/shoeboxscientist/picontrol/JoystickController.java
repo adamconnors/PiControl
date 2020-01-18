@@ -62,6 +62,10 @@ public class JoystickController {
                 cameraLeftRight = (int) Math.round(x / 10f) * 20;
                 cameraUpDown = (int) Math.round(y / 10f) * 20;
 
+                // Temporary hack to make camera up/down control the wrist instead.
+                // Centre position is -60 so range is now 40-->-160
+                // cameraUpDown -= 60;
+
                 if (cameraLeftRight != previousCameraLeftRight
                         || cameraUpDown != previousCameraUpDown) {
                     previousCameraLeftRight = cameraLeftRight;
