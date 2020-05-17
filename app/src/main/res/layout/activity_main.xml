@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#ffff0000"
     android:id="@+id/root"
-    tools:context="com.cromulator.picontrol.MainActivity">
+    tools:context="com.shoeboxscientist.picontrol.MainActivity">
 
     <!-- Web view for camera stream -->
     <WebView android:id="@+id/webview"
@@ -22,6 +22,9 @@
 
     <include layout="@layout/script_layout"/>
 
+    <!--
+    Disabled the button / relay based grabby hand and using a servo value as part of the arm
+    control mode instead. Uncomment this to bring back the relay controls.
     <ImageView
         android:id="@+id/closeHand"
         android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
         android:layout_toRightOf="@+id/closeHand"
         android:src="@drawable/button_open_selector"
         android:layout_margin="6dp"/>
+    -->
 
 
     <com.andretietz.android.controller.DirectionView
@@ -48,6 +52,14 @@
         android:layout_alignParentLeft="true"
         app:deadZone="0"
         android:layout_margin="4dp"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/modeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/motorCtrl"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"/>
 
     <com.andretietz.android.controller.DirectionView
         android:id="@+id/motorCtrl"

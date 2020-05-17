@@ -37,10 +37,14 @@ public class JoyStickPosition {
                         lastY = yp;
                         listener.onPositionUpdate(xp, yp);
                     }
+
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        listener.onDown(xp, yp);
+                    }
                 }
 
                 if (event.getAction() == MotionEvent.ACTION_UP) {
-                    listener.onStop();
+                    listener.onUp();
                 }
 
                 return false;
@@ -57,7 +61,8 @@ public class JoyStickPosition {
 
     public static interface Listener {
         void onPositionUpdate(int x, int y);
-        void onStop();
+        void onDown(int x, int y);
+        void onUp();
     }
 
 }

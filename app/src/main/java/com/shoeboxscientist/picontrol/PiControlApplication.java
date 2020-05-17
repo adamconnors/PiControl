@@ -45,6 +45,7 @@ public class PiControlApplication extends Application {
     private static final String STREAM_PORT = "8080";
     private static final String STREAM_PATH = "/stream/video.mjpeg";
 
+    // Set up FAKE_MODE
     private static final boolean FAKE_MODE = false;
 
     @Override

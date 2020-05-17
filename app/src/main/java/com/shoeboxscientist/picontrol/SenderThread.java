@@ -33,7 +33,7 @@ public class SenderThread extends Thread {
             @Override
             public void run() {
                 // Send the message to the network.
-                int code = mClient.sendCommand(new Command.Builder(0, 0, 0, 0, 0).build());
+                int code = mClient.sendCommand(new Command.Builder(0, 0, 0, 0, 0, 0, 0, 0, 0).build());
 
                 // Send the response back to the UI thread.
                 Message rtn = mNetworkHandler.obtainMessage(PiControlApplication.MSG_PING_RESPONSE,

@@ -69,6 +69,31 @@ public class RestClient {
                     url.append("h=").append("1,2");
                     break;
             }
+            needsSeparator = true;
+        }
+
+        if (cmd.hasArmBase()) {
+            if (needsSeparator) { url.append("&"); }
+            url.append("a0=").append(cmd.getArmBase());
+            needsSeparator = true;
+        }
+
+        if (cmd.hasArmElbow()) {
+            if (needsSeparator) { url.append("&"); }
+            url.append("a1=").append(cmd.getArmElbow());
+            needsSeparator = true;
+        }
+
+        if (cmd.hasArmWrist()) {
+            if (needsSeparator) { url.append("&"); }
+            url.append("a2=").append(cmd.getArmWrist());
+            needsSeparator = true;
+        }
+
+        if (cmd.hasArmHand()) {
+            if (needsSeparator) { url.append("&"); }
+            url.append("a3=").append(cmd.getArmHand());
+            needsSeparator = true;
         }
 
         if (fakeMode) {

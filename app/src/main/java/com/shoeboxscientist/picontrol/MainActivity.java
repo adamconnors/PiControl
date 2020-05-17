@@ -4,8 +4,10 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.SwitchCompat;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
     private DirectionView motorCtrl;
     private View openGrabbyHand;
     private View closeGrabbyHand;
+    private SwitchCompat modeToggle;
 
     private PiControlApplication.NetworkCallbackInterface mCallbacks = new NetworkCallbacks();
 
@@ -80,11 +83,16 @@ public class MainActivity extends Activity {
         // Blockly controller for interaction with Blockly Editor.
         mBlocklyManager = new BlocklyManager(this, getWindow(), webViewMgr);
 
-        // Grabby hand controls
-        openGrabbyHand = findViewById(R.id.openHand);
-        closeGrabbyHand = findViewById(R.id.closeHand);
-        openGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(true));
-        closeGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(false));
+        // Grabby hand controls -- button / relay based hand disabled in this version. Uncomment to
+        // bring back the relay controls.
+//        openGrabbyHand = findViewById(R.id.openHand);
+//        closeGrabbyHand = findViewById(R.id.closeHand);
+//        openGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(true));
+//        closeGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(false));
+
+        // Mode toggle control
+        modeToggle = findViewById(R.id.modeToggle);
+        modeToggle.setOnCheckedChangeListener(mJoystickController.getModeToggleListener());
 
         // Set up camera position.
         JoyStickPosition cameraPosition = new JoyStickPosition(cameraCtrl,
