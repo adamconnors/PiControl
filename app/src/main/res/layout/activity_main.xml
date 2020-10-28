@@ -32,7 +32,9 @@
         android:layout_above="@+id/cameraCtrl"
         android:src="@drawable/button_closed_selector"
         android:layout_margin="6dp"/>
+    -->
 
+    <!-- Using openHand to activate the speaker - 28/10/20 -->
     <ImageView
         android:id="@+id/openHand"
         android:layout_width="wrap_content"
@@ -41,7 +43,6 @@
         android:layout_toRightOf="@+id/closeHand"
         android:src="@drawable/button_open_selector"
         android:layout_margin="6dp"/>
-    -->
 
 
     <com.andretietz.android.controller.DirectionView

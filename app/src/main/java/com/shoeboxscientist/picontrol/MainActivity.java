@@ -85,9 +85,10 @@ public class MainActivity extends Activity {
 
         // Grabby hand controls -- button / relay based hand disabled in this version. Uncomment to
         // bring back the relay controls.
-//        openGrabbyHand = findViewById(R.id.openHand);
+        openGrabbyHand = findViewById(R.id.openHand);
+        openGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(true));
+
 //        closeGrabbyHand = findViewById(R.id.closeHand);
-//        openGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(true));
 //        closeGrabbyHand.setOnTouchListener(mJoystickController.getGrabbyHandListener(false));
 
         // Mode toggle control
